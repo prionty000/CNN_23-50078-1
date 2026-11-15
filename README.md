@@ -50,6 +50,9 @@ jupyter notebook CNN_23-50078-1.ipynb   # run all cells top-to-bottom
 
 Runs on CPU or GPU (it auto-detects CUDA, e.g. on Kaggle/Colab).
 
+**Running on Kaggle (recommended, free GPU):** see [`KAGGLE.md`](KAGGLE.md) for a
+step-by-step guide (enable GPU + Internet, then *Run All*).
+
 ## Results
 
 See the **Results** section below — populated after training.
