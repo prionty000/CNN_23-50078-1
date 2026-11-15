@@ -55,6 +55,25 @@ step-by-step guide (enable GPU + Internet, then *Run All*).
 
 ## Results
 
-See the **Results** section below — populated after training.
+Trained from scratch for 40 epochs on a Kaggle **GPU (Tesla T4)**.
 
-<!-- RESULTS -->
+**Test accuracy: 94.53% (121 / 128)**
+
+| Class | Precision | Recall | F1-score | Support |
+|-------|:---------:|:------:|:--------:|:-------:|
+| angular_leaf_spot | 0.933 | 0.977 | 0.955 | 43 |
+| bean_rust | 0.974 | 0.860 | 0.914 | 43 |
+| healthy | 0.933 | 1.000 | 0.966 | 42 |
+| **accuracy** | | | **0.945** | **128** |
+
+### Training & validation curves
+![Training curves](results/training_curves.png)
+
+### Confusion matrix (test set)
+![Confusion matrix](results/confusion_matrix.png)
+
+### Sample test predictions
+![Sample predictions](results/sample_predictions.png)
+
+The main confusion is between `angular_leaf_spot` and `bean_rust` (both are
+brown/necrotic lesions), while `healthy` leaves are classified almost perfectly.
